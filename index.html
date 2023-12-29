@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School UI</title>
+   
+   <style>
+        body{
+            background-color: rgba(148, 133, 222, 0.655);
+            margin: 20px auto;
+        }
+        .container {
+            /* border: 1px solid red; */
+            height: 1300px;
+            width: 1500px;
+            background-color: rgb(187, 197, 197);
+            margin: 20px;
+        }
+
+        .box {
+            
+            width: 1000px;
+            height: 200px;
+            margin: 20px auto;
+            
+        }
+
+        .cell1 {
+            /* border: 2px solid black; */
+            width: 192px;
+            height: 200px;
+            display: inline-block;
+            background-color: yellow;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .cell2 {
+            /* border: 2px solid black; */
+            width: 192px;
+            height: 200px;
+            display: inline-block;
+            margin-left: 1px;
+            background-color: blue;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .cell3 {
+            /* border: 2px solid black; */
+            width: 192px;
+            height: 200px;
+            display: inline-block;
+            margin-left: 1px;
+            background-color: rgb(223, 58, 119);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .cell4 {
+            /* border: 2px solid black; */
+            width: 192px;
+            height: 200px;
+            display: inline-block;
+            margin-left: 1px;
+            background-color: rgba(241, 37, 190, 0.918);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .cell5 {
+            /* border: 2px solid black; */
+            width: 192px;
+            height: 200px;
+            display: inline-block;
+            margin-left: 1px;
+            background-color: rgb(18, 215, 18);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .main{
+            width: 380px;
+            height: 725px;
+            margin: 20px auto;
+        }
+        .student {
+            /* border: 2px solid black; */
+            width: 380px;
+            height: 350px;
+            background-color: rgba(104, 26, 181, 0.977);
+            border-radius: 20px;
+        
+        }
+        .top1{
+            width:100px ;
+            height: 200px;
+            margin-top: 100px;
+            margin-left: 20px;
+            text-align: center;
+        }
+        
+        .student1{
+            
+            width: 100px;
+            height: 120px;
+            margin-top: 25px;
+            border-radius: 10px;
+            background-color: rgb(101, 35, 199);
+        }
+        .top2{
+            width: 100px;
+            height: 220px;
+            margin-top: -220px;
+            margin-left: 140px;
+            text-align: center;
+
+        }
+        .student2{
+            border-radius: 10px;
+            width: 100px;
+            height: 140px;
+            margin-top: -12px;
+            background-color: rgb(101, 35, 199);
+           
+        }
+        .top3{
+            width:100px ;
+            height: 200px;
+            margin-top: px;
+            margin-left: 260px;
+            margin-top: -215px;
+            text-align: center;
+        }
+        .student3{
+            width: 100px;
+            height: 120px;
+            margin-top: -17px;
+            border-radius: 10px;
+            background-color: rgb(101, 35, 199);
+        }
+
+        .teacher{
+            /* border: 2px solid /black; */
+            width: 380px;
+            height: 350px;
+            margin: 20px auto;
+            background-color: rgba(104, 26, 181, 0.977);
+            border-radius: 20px;
+        }
+
+        .left{
+            
+            width: 280px;
+            height: 510px;
+            margin-top: -640px;
+            margin-left: 248px;
+        }
+        .stu-reg1{
+            /* border: 2px solid black; */
+            height: 160px;
+            background-color: red;
+            border-radius: 15px;
+        }
+
+        .stu-reg2{
+            /* border: 2px solid black; */
+            height: 160px;
+            margin-top: 10px;
+            background-color: red;
+            border-radius: 15px;
+        }
+        .stu-reg3{
+            /* border: 2px solid black; */
+            height: 160px;
+            margin-top: 10px;
+            background-color: red;
+            border-radius: 15px;
+        }
+
+        .right{
+            width: 280px;
+            height: 510px;
+            margin-top: -515px;
+            margin-left: 970px;
+        }
+        .the-reg1{
+            /* border: 2px solid black; */
+            height: 160px;
+            background-color: rgb(70, 103, 249);
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .the-reg2{
+            /* border: 2px solid black; */
+            height: 160px;
+            margin-top: 10px;
+            background-color: rgb(70, 103, 249);
+            text-align: center;
+            border-radius: 15px;
+        }
+        .the-reg3{
+            /* border: 2px solid black; */
+            height: 160px;
+            margin-top: 10px;
+            background-color: rgb(70, 103, 249);
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .container-1{
+            
+            width: 1000px;
+            height: 100px;
+            margin: 130px auto;
+        }
+        .box-1{
+            /* border: 2px solid black; */
+            width: 280px;
+            height: 100px;
+            display: inline-block;
+            background-color: cadetblue;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .box-2{
+            /* border: 2px solid black; */
+            width: 280px;
+            height: 100px;
+            display: inline-block;
+            margin-left: 71px;
+            background-color: cadetblue;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .box-3{
+            /* border: 2px solid black; */
+            width: 280px;
+            height: 100px;
+            display: inline-block;
+            margin-left: 69px;
+            background-color: cadetblue;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .box-4{
+            /* border: 2px solid black; */
+            width: 280px;
+            height: 100px;
+            background-color: rgba(100, 34, 34, 0.864);
+            text-align: center;
+            display: inline-block;
+            margin-left: 606px;
+            margin-top: -500px;
+            border-radius: 10px;
+
+
+        }
+        h3{
+            color: white;
+        }
+
+        .dash{
+            width: 1500px;
+            height: 100px;
+            /* border: 1px solid black; */
+            text-align: center;
+            margin: 20px;
+            background-color: aliceblue;
+        }
+        .project{
+            width: 1500px;
+            height: 50px;
+            /* border: 1px solid black; */
+            margin: 20px;
+            background-color: aliceblue;
+            
+        }
+        #structure{
+            margin: 20px auto;
+        }
+    </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="structure">
+    <div class="dash">
+        <h1 style="color: rgba(127, 20, 227, 0.889);">Dashboard</h1>
+        <h4 style="margin-top: -20px;">ProGame coding WITHOUT Computers</h3>
+    </div>
+
+    <div class="project">
+        <i class='far fa-arrow-alt-circle-left' style='font-size:26px; margin-top: 12px; margin-left: 230px; color: rgb(13, 193, 52);'></i>
+        <h4 style="margin-top: -20px; margin-left: 615px;">Next Skills 360 Internal Testing Project</h4>
+        <i style="font-size: 30px; color: rgb(209, 31, 31); margin-top: 40px; position: relative; top: -90px; left: 1100px;" class="fa-solid fa-user-graduate"></i> <h4 style="position: relative; top: -134px; left: 1130px;">Student</h4>
+        <i style="font-size: 30px; color: rgb(209, 35, 35); margin-top: 40px; position: relative; top: -218px; left: 1250px;" class="fa-solid fa-person-chalkboard"></i> <h4 style="position: relative; top: -265px; left: 1295px;">Teacher</h4>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="cell1">
+                <i style="font-size: 70px; color: white; margin-top: 20px;" class="fa-solid fa-building-columns"></i>
+                <h3 style="margin-top: 55px; color: white;">4</h3>
+                <h3 style="margin-top: -15px; color: white;">Schools</h3>
+            </div>
+            <div class="cell2">
+               <img height="100" width="100" style="margin-top: 15px;" src="https://cdn-icons-png.flaticon.com/512/4021/4021687.png" alt="">
+               <h3 style="margin-top: 25px; color: white;">17,801</h3>
+                <h3 style="margin-top: -15px; color: white;">Scans</h3>
+            </div>
+            <div class="cell3">
+                <i style="font-size: 90px; margin-top: 20px; color: white ;" class="fa-solid fa-chart-simple"></i>
+                <h3 style="margin-top: 35px; color: white;">6,09,040</h3>
+                <h3 style="margin-top: -15px; color: white;">Points</h3>
+            </div>
+            <div class="cell4">
+                <i style="font-size: 90px; margin-top: 20px; color: white;" class="fa-solid fa-ticket"></i>
+                <h3 style="margin-top: 35px; color: white;">4</h3>
+                <h3 style="margin-top: -15px; color: white;">App Support  Tickets</h3>
+            </div>
+            <div class="cell5">
+                <img width="120" height="120" src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="">
+                <h3 style="margin-top: -8px; color: white;">5,555</h3><br>
+                <h3 style="margin-top: -26px; color: white;">WhatsApp Support Tickets</h3>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="student">
+                <h3 style="text-align: center; padding: 10px; color: rgba(214, 238, 5, 0.848)">Top 3 Students</h3>
+                <div class="top1"> 
+                    <h3 style="position: relative; top: 20px;">Sanjeev</h3>
+                    <div class="student1"><i style="font-size: 40px; color: white; margin-top: 40px;" class="fa-solid fa-user-graduate"></i>
+                    <h3 style="color: white;">2</h3>
+                    </div>
+                    <h3 style="margin: 10px;">20,677</h3>
+                </div>
+
+                <div class="top2">
+                    <h3>Veeresh</h3>
+                    <div class="student2">
+                        <i style="font-size: 40px; color: white; margin-top: 40px;" class="fa-solid fa-user-graduate"></i>
+                    <h3 style="color: white;">1</h3>
+                    </div>
+                    <h3 style="margin: 10px">5,17,133</h3>
+                </div>
+
+               <div class="top3">
+                <h3>somu</h3>
+                <div class="student3">
+                    <i style="font-size: 40px; color: white; margin-top: 40px;" class="fa-solid fa-user-graduate"></i>
+                    <h3 style="color: white;">3</h3>
+                </div>
+                <h3 style="margin: 10px" >10000</h3>
+               </div>
+                
+            </div>
+            <div class="teacher">
+                <h3 style="text-align: center; padding: 10px; color: rgba(214, 238, 5, 0.848);">Top 3 Teachers</h3>
+                <div class="top1"> 
+                    <h3 style="position: relative; top: 20px;">Santhosh</h3>
+                    <div class="student1"><i style="font-size: 40px; color: white; margin-top: 40px;" class="fa-solid fa-person-chalkboard"></i>
+                    <h3 style="color: white;">2</h3>
+                    </div>
+                    <h3 style="margin: 10px;">5,677</h3>
+                </div>
+
+                <div class="top2">
+                    <h3>Suresh</h3>
+                    <div class="student2">
+                        <i style="font-size: 40px; color: white; margin-top: 40px;" class="fa-solid fa-person-chalkboard"></i>
+                    <h3 style="color: white;">1</h3>
+                    </div>
+                    <h3 style="margin: 10px">67,133</h3>
+                </div>
+
+               <div class="top3">
+                <h3>Harish</h3>
+                <div class="student3">
+                    <i style="font-size: 40px; color: white; margin-top: 40px;" class="fa-solid fa-person-chalkboard"></i>
+                    <h3 style="color: white;">3</h3>
+                </div>
+                <h3 style="margin: 10px" >1,050</h3>
+               </div>
+            </div>
+        </div>
+
+        <div class="left">
+            <div style="text-align: center;" class="stu-reg1">
+                <i style="font-size: 40px; color: white; margin-top: 15px;" class="fa-solid fa-user-graduate"></i>
+                <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">11</h3></div>
+                <h3>Students Registered </h3>
+            </div>
+            <div style="text-align: center;" class="stu-reg2">
+                <i style="font-size: 40px; color: white; margin-top: 15px;" class="fa-solid fa-user-graduate"></i>
+                <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">7</h3></div>
+                <h3> Active Students</h3>
+            </div>
+            <div style="text-align: center;" class="stu-reg3">
+                <i style="font-size: 40px; color: white; margin-top: 15px;" class="fa-solid fa-user-graduate"></i>
+                <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">500</h3></div>
+                <h3>Students Participated</h3>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="the-reg1">
+                <i style="font-size: 40px; color: white; margin-top: 20px;" class="fa-solid fa-person-chalkboard"></i>
+                <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">6</h3></div>
+                <h3>Teachers Registered </h3>
+            </div>
+            <div class="the-reg2">
+                <i style="font-size: 40px; color: white; margin-top: 20px;" class="fa-solid fa-person-chalkboard"></i>
+                <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">5</h3></div>
+                <h3> Active Teachers</h3>
+            </div>
+            <div class="the-reg3">
+                <i style="font-size: 40px; color: white; margin-top: 20px;" class="fa-solid fa-person-chalkboard"></i>
+                <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">100</h3></div>
+                <h3>Teachers Participated</h3>
+            </div>
+        </div>
+
+        <div class="container-1">
+            <div class="box-1">
+                <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">500</h3></div>
+                <h3>Student Kits</h3>
+            </div>
+            <div class="box-2">
+                <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">200</h3></div>
+                <h3>Teacher Kits</h3>
+            </div>
+            <div class="box-3">
+                <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">1,250</h3></div>
+                <h3>Total Kits</h3>
+            </div>
+        </div>
+        <div style="position: relative; top: -35px;" class="box-4">
+            <div style="width: 200px; height: 30px; border: 1px solid white; margin: 20px auto; border-radius: 10px; background-color: white;"><h3 style="color: blueviolet; margin: 5px;">1:2</h3></div>
+                <h3>Kit-Student Ratio</h3>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
